@@ -1,0 +1,113 @@
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
+	.border-1px
+		-webkit-transform: scaleY(0.7)
+		transform: scaleY(0.7)
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+	.border-1px 
+		-webkit-transform: scaleY(0.5)
+		transform: scaleY(0.5)
+border-1px($color)
+	border: 1px solid $color
+    // position: relative 
+    // display: block
+    // position: absolute
+    // left: 0
+    // bottom: 0
+	// width: 100%
+    // content: ' '
+html,body
+	width: 100%
+	height: 100%
+	font-size: 10px
+	font-family: "microsoft yaHei","微软雅黑",arial
+	.header
+		width: 100%
+		background: rgb(27,23,23)
+		height: 38px
+		text-align: center
+		color: #fff
+		line-height: 38px
+		position: relative 
+		> .h1
+			font-size: 1.7rem
+			margin: 0
+		.sideBarShowBtn
+			width: 17px
+			height: 17px
+			position: absolute
+			left: 11px
+			top: 11px
+			background: #fff
+	.homeWrapper
+		.sideBar
+			display: none
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 20rem
+			background: #ffffff
+			font-size: 1.8rem
+			color: rgb(27,27,23)
+			z-index: 1
+			> .title
+				margin: 40px auto
+				width: 80%
+				text-align: center
+				position: relative
+				> h1
+					font-size: 2rem
+				.sideBarHideBtn
+					position: absolute
+					left: 0
+					top: 0
+					display: inline-block
+					width: 2rem
+					height: 2rem
+					background: #000
+			> ul
+				list-style: none
+				width: 80%
+				margin: 40px auto
+				text-align: left
+				> li
+					width: 100%
+					margin-bottom: 30px
+					padding: 10 0 
+					border-1px(rgb(68,68,68))
+					border-top: 0
+					border-left: 0
+					border-right: 0
+		.banner
+			width: 99%
+			height: 8rem
+			line-height: 2rem
+			color: #000
+			font-size: 1rem
+			text-align: center	
+			border-1px(#000)
+			display: flex
+			align-items: center
+			justify-content: center
+		.searchWrapper
+			display: flex
+			height: 40px
+			width: 70%
+			margin: 0px auto
+			border-1px(rgb(27,23,23))
+			overflow: hidden
+			border-radius: 5px
+			font-size: 1.5rem	
+			.searchInput
+				flex: 1
+				text-indent: 8px
+				border: none
+			.searchBtn
+				width: 40px
+				height: 100%
+				background: rgb(49,48,46)
+				text-align: center
+				line-height: 40px
+				border: none	
+		
+				
