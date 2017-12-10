@@ -93,7 +93,7 @@ html,body
 			display: flex
 			height: 40px
 			width: 70%
-			margin: 0px auto
+			margin: 10px auto
 			border-1px(rgb(27,23,23))
 			overflow: hidden
 			border-radius: 5px
@@ -109,5 +109,38 @@ html,body
 				text-align: center
 				line-height: 40px
 				border: none	
-		
+		.reslutWrapper
+			position: relative
+			> ul li.reslutBook
+				margin: 0 auto 
+				width: 90%
+				display: flex
+				justify-content: space-around
+				background: rgb(238,238,238)
+				padding: 10px
+				height: 110px
+				.bookCoverBox
+					width: 10rem
+					height: 100%
+					margin-right: 10px
+					background-size:90%
+					background-position: center 
+					background-repeat: no-repeat
+					background-image: url('./img/logo.png')
+					background-color: #fff
+				.bookInfoBox
+					flex: 1
+					height:100%
+					box-sizing: border-box
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					background: #fff
+					padding: 10px 
+					.bookInfo
+						> span 
+							display: block
+							margin-bottom: 5px 
+
+			
 				
